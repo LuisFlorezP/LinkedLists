@@ -1,5 +1,15 @@
 ﻿using LinkedLists.Logic;
 
+var fruits = new DoubleList<string>();
+fruits.Add("Pera");
+fruits.Add("Kiwi");
+fruits.Add("Durazno");
+Console.WriteLine(fruits);
+Console.WriteLine(fruits.Insert("Manzana", 2));
+Console.WriteLine(fruits);
+
+
+/*
 Console.WriteLine("*** Linked Lists ***");
 var fruits = new DoubleList<Fruit>();
 fruits.Add(new Fruit { Name = "Naranja", Price = 5000 });
@@ -19,7 +29,7 @@ foreach (var fruit in fruitsArray.OrderByDescending(fruit => fruit.Price))
 {
     Console.WriteLine(fruit);
 }
-
+*/
 
 /*
 var singleList = new SingleList<string>();
