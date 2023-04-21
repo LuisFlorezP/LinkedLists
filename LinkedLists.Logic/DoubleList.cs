@@ -148,6 +148,7 @@ namespace LinkedLists.Logic
                     pointer.Left = nodo;
                     _first = nodo;
                     insert.IsSucced = true;
+                    Count++;
                     return insert;
                 }
                 for (int i = 1; i < Count; i++)
@@ -160,6 +161,7 @@ namespace LinkedLists.Logic
                         pointer.Left.Right = nodo;
                         pointer.Left = nodo;
                         insert.IsSucced = true;
+                        Count++;
                         return insert;
                     }
                 }
