@@ -76,6 +76,7 @@ namespace LinkedLists.Logic
                     _first = null;
                     pointer = null;
                     delete.IsSucced = true;
+                    Count--;
                     return delete;
                 }
                 else if (pointer.Data.Equals(item))
