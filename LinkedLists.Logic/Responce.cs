@@ -15,14 +15,14 @@ namespace LinkedLists.Logic
         public Responce()
         {
             IsSucced = false;
-            Message = "Failed process";
+            Message = "Failed process\n";
         }
 
         public override string ToString()
         {
             if (IsSucced)
             {
-                Message = "Succed process";
+                Message = "Succed process\n";
                 return Message;
             }
             return Message;

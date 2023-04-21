@@ -26,7 +26,7 @@ namespace LinkedLists.Logic
             var pointer = _first;
             while (pointer != null)
             {
-                output += $"{pointer.Data}\n";
+                output += $" - {pointer.Data}\n";
                 pointer = pointer.Right;
             }
             return output;
@@ -71,7 +71,14 @@ namespace LinkedLists.Logic
             }
             else
             {
-                if (pointer.Data.Equals(item))
+                if (pointer.Data.Equals(item) && Count == 1)
+                {
+                    _first = null;
+                    pointer = null;
+                    delete.IsSucced = true;
+                    return delete;
+                }
+                else if (pointer.Data.Equals(item))
                 {
                     _first = pointer.Right;
                     pointer.Right.Left = null;
