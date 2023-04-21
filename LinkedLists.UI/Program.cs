@@ -34,7 +34,7 @@ void AddItem()
 {
     Console.Write("\nEnter the item: ");
     var item = Console.ReadLine();
-    fruits.Add(item!);
+    fruits.Add(item!); 
 }
 
 void ShowList()
