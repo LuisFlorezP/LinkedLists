@@ -182,5 +182,17 @@ namespace LinkedLists.Logic
             }
             return array;
         }
+
+        public string FillFibonacci(int limit)
+        {
+            for (; Count < limit; Count++)
+            {
+                if (IsEmpty)
+                {
+                    Add(0);
+                }
+            }
+            return string.Empty;
+        }
     }
 }
