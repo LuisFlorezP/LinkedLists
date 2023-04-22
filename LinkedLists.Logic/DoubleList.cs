@@ -38,7 +38,7 @@ namespace LinkedLists.Logic
             var pointer = _last;
             while (pointer != null)
             {
-                output += $"{pointer.Data}\n";
+                output += $" - {pointer.Data}\n";
                 pointer = pointer.Left;
             }
             return output;
