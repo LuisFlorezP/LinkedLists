@@ -183,16 +183,28 @@ namespace LinkedLists.Logic
             return array;
         }
 
-        public string FillFibonacci(int limit)
+        public void FillFibonacci(int limit)
         {
-            for (; Count < limit; Count++)
+            while (Count < limit)
             {
                 if (IsEmpty)
                 {
-                    Add(0);
+                    T number = (T) Convert.ChangeType(0, typeof(T));
+                    Add(number);
+                }
+                else if (Count == 1)
+                {
+                    T number = (T) Convert.ChangeType(1, typeof(T));
+                    Add(number);
+                }
+                else
+                {
+                    var pointer = _last;
+                    var result = Convert.ToInt32(pointer.Data) + Convert.ToInt32(pointer.Left.Data);
+                    T number = (T)Convert.ChangeType(result, typeof(T));
+                    Add(number);
                 }
             }
-            return string.Empty;
         }
     }
 }
