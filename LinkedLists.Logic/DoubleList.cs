@@ -35,7 +35,7 @@
             var pointer = _last;
             while (pointer != null)
             {
-                output += $"{pointer.Data}\n";
+                output += $" - {pointer.Data}\n";
                 pointer = pointer.Left;
             }
             return output;
@@ -73,6 +73,7 @@
                     _first = null;
                     pointer = null;
                     delete.IsSucced = true;
+                    Count--;
                     return delete;
                 }
                 else if (pointer.Data.Equals(item))
@@ -144,6 +145,7 @@
                     pointer.Left = nodo;
                     _first = nodo;
                     insert.IsSucced = true;
+                    Count++;
                     return insert;
                 }
                 for (int i = 1; i < Count; i++)
@@ -156,6 +158,7 @@
                         pointer.Left.Right = nodo;
                         pointer.Left = nodo;
                         insert.IsSucced = true;
+                        Count++;
                         return insert;
                     }
                 }

@@ -66,7 +66,7 @@ do
         case 2: ShowList(); break;
         case 3: RemoveItem(); break;
         case 4: InsertItem(); break;
-        case 5: ; break;
+        case 5: InvertedList(); break;
     }
 } while (option != 0);
 
@@ -116,4 +116,15 @@ void InsertItem()
     Console.Write("Enter the new item: ");
     var item = Console.ReadLine();
     Console.WriteLine(fruits.Insert(item!, Convert.ToInt32(position)));
+}
+
+void InvertedList()
+{
+    if (fruits.IsEmpty)
+    {
+        Console.WriteLine("\nThe list is empty.\n");
+        return;
+    }
+    Console.WriteLine("\nThe elements are: ");
+    Console.WriteLine(fruits.ToInvertedList());
 }
