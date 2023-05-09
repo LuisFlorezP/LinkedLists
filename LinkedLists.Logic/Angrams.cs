@@ -23,17 +23,17 @@ namespace LinkedLists.Logic
                 var target = sentencesTarget[i].ToArray<char>();
                 Array.Sort(source);
                 Array.Sort(target);
-                Console.WriteLine("ARREGLO DE AMBAS PALABRAS:");
-                for (int a = 0; a < source.Length; a++)
-                {
-                    Console.Write($"{source[a]}\t");
-                }
-                Console.WriteLine();
-                for (int b = 0; b < target.Length; b++)
-                {
-                    Console.Write($"{target[b]}\t");
-                }
-                Console.WriteLine("\n");
+                //Console.WriteLine("ARREGLO DE AMBAS PALABRAS:");
+                //for (int a = 0; a < source.Length; a++)
+                //{
+                //    Console.Write($"{source[a]}\t");
+                //}
+                //Console.WriteLine();
+                //for (int b = 0; b < target.Length; b++)
+                //{
+                //    Console.Write($"{target[b]}\t");
+                //}
+                //Console.WriteLine("\n");
                 var countChanges = 0;
                 var j = 0;
                 var k = 0;
