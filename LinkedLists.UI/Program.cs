@@ -2,22 +2,20 @@
 
 var list1 = new List<string>()
 {
-	"manzana",
-	"perita",
-	"reconocer",
-	"pedro",
-	"romper",
-	"Jose"
+    "Los",
+    "Perro",
+    "Pan",
+    "La vida es bella",
+    "saroihdsrgpoigreu89er5wuyaesfoipwy4tyhdfgsalkjrsthjgdfasviouyergoihvdasiodfshñoasdifywoer9yhgadfrsjklñhdsbfljkys"
 };
 
 var list2 = new List<string>()
 {
-	"caminar",
-	"perris",
-	"reconocer",
-	"pepe",
-	"rascar",
-	"Sejo"
+    "Sol",
+    "Gato",
+    "Paz",
+    "Bella es tu boca",
+    "dpioujvdfkjdhrsgidsfhasrfgyiughjkdfgrliergiÁopaegrpegru´90we5tñvdfjlisrteuyp9gdfuadsofyvdsalkjhergwoiuyewsefiode"
 };
 
 var angrams = Angrams.Anagrams(list1, list2);
